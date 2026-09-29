@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+@layer base {
+    body {
+        @apply bg-slate-100 text-slate-800 antialiased;
+    }
+}
+
+@utility card {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-sm;
+}
